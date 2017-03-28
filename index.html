@@ -10,11 +10,28 @@
   </head>
   <body>
     <div class="container">
-      <h1>Word Puzzle</h1>
-      <label for="sentence">Sentence to turn into a puzzle:</label>
-      <input id="sentenceInput" class="form-control" type="text">
-      <hr>
-      <button class="btn btn-success" id="submitButton">Puzzle me!</button>
+      <div class="row" id="puzzleInput">
+        <h1>Word Puzzle</h1>
+        <label for="sentence">Sentence to turn into a puzzle:</label>
+        <input id="sentenceInput" class="form-control" type="text">
+        <hr>
+        <button class="btn btn-success" id="submitButton">Puzzle me!</button>
+      </div>
+      <div class="row" id="puzzleOutput">
+        <h2>Can you solve this puzzle?</h2>
+        <h3 id="puzzleSentence"></h3>
+
+        <div>
+          <input id="guess" class="form-control" type="text">
+          <hr>
+          <button class="btn btn-success" id="guessButton">Submit guess</button>
+          <h2 id="correct"></h2>
+
+
+        </div>
+
+      </div>
+      </div>
     </div>
   </body>
 </html>
